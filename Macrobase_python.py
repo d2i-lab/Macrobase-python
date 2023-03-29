@@ -11,8 +11,8 @@ class Macrobase:
     """
 
     def __init__(self,
-                 df, min_support,
-                 min_rr, usecolnames=True,
+                 df, min_support=0.1,
+                 min_rr=0.1, usecolnames=True,
                  max_len=None, invert=False):
         """Initializes the outliers, dataset, support, and risk ratio.
         Args:
